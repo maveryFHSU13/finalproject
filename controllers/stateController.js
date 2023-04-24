@@ -91,9 +91,9 @@ const getStateFunFact = async (req, res) => {
 
     let randomNum = Math.floor(Math.random() * funArray.length);
 
-    let funFact = funArray[randomNum];
+    let funfact = funArray[randomNum];
 
-    res.json({ funFact });
+    res.json({ funfact });
   }
   if (!funStateExists) {
     return res.json({

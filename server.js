@@ -30,7 +30,7 @@ app.use("/states", require("./routes/api/states"));
 //add catch all for routes
 app.all("*", (req, res) => {
   res.status(404);
-  if (req.accepts("html")) {
+  if (req.accepts("text/html")) {
     res.sendFile(path.join(__dirname, "views", "404.html"));
   } else if (req.accepts("json")) {
     res.json({ error: "404 Not Fond" });
