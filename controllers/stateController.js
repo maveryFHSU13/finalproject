@@ -270,7 +270,7 @@ const deleteStateFunFact = async (req, res) => {
 
   if (!findState) {
     return res.json({
-      message: `No Fun Fact found at that index for ${singleState.state}`,
+      message: `No Fun Facts found for ${singleState.state}`,
     });
   }
 
